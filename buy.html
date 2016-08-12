@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Rugelach</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <a href="index.html">Home</a>
+
+      <div id="product">
+            <div id="product-desc"></div>
+            <div class="product-list">
+                <img src="img/rugelach_1.JPG" alt="rugelach">
+            </div>
+            <div class="product-list">
+                <img src="img/rugelach_2.JPG" alt="rugelach">
+            </div>
+            <div class="product-list">
+                <img src="img/rugelach_3.JPG" alt="rugelach">
+            </div>
+            <div class="product-list">
+            </div>
+        </div>
+
+
+    <div class="simpleCart_shelfItem">
+        <h2 class="item_name"> Rugelach </h2>
+        <p>  <input type="text" value="1" class="item_Quantity"><br>
+            <span class="item_price">$5.95</span><br>
+            <a class="item_add" href="javascript:;"><button type="button">Add to Cart</button></a></p>
+    </div>
+
+<span class="simpleCart_quantity"></span> items - <span class="simpleCart_total"></span>
+<a href="javascript:;" class="simpleCart_checkout"><button type="button">Checkout</button></a>
+
+
+
+<a href="javascript:;" class="simpleCart_empty"><button type="button">Empty</button></a>
+
+    <div class="simpleCart_items"></div>
+
+
+    <script src="JS/simpleCart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script>
+        simpleCart({
+            checkout: {
+                type: "PayPal",
+                email: "you@yours.com"
+            }
+        });
+    </script>
+
+</body>
+
+</html>
